@@ -40,9 +40,45 @@ body {
 .nav-item .nav-link:focus{
     color: var(--green);
 }
-.search {
+
+.nav-bar-search-box {
+    height: 72px;
+    /*width: 280px;
+    */position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.navbar-search {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--green);
+    width: 250px;
+    caret-color: white;
+    margin: 0 15px;
+    position: absolute;
+    bottom: 40%;
+    transform: translateX(calc(100% + 15px));
+    -webkit-transform: translateX(calc(100% + 15px));
+    -moz-transform: translateX(calc(100% + 15px));
+    -ms-transform: translateX(calc(100% + 15px));
+    -o-transform: translateX(calc(100% + 15px));
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.search-icon {
     border-left: 2px solid;
     border-color: var(--green);
+    cursor: pointer;
 }
 
 .navbar-toggler {
